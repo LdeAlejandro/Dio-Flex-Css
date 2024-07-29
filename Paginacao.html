@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: rgb(64, 64, 64,);
+}
+
+a{
+  text-decoration: none;
+  cursor: inherit;
+  color: inherit;
+}
+
+.paginacao{
+  list-style: none;
+}
+
+.paginacao li{
+  display: inline-block;
+  height: 32px;
+  width: 30px;
+  margin-right: 2px;
+  margin-left: 2px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.paginacao-anterior:hover, .paginacao-numero:hover,
+.paginacao-proximo:hover{
+  border-color: 1px solid rgb(238,238,238);
+}
+
+.paginacao-anterior:active, .paginacao-numero:active,
+.paginacao-proximo:active{
+  background-color: rgb(0, 131, 202, 0.467);
+  color: rgb(255,255,255);
+  
+}
+
+.paginacao-selecionado{
+  background-color: rgb(0, 131, 202);
+  color: rgb(255,255,255);
+}
+
+
+    </style>
+</head>
+<body>
+    <ul class="paginacao">
+        <li class="paginacao-anterior"><a href="#"><
+        </a></li>
+        <li class="paginacao-numero"><a href="#">1</a></li>
+        <li class="paginacao-numero"><a href="#">2</a></li>
+        <li class="paginacao-numero paginacao-selecionado"><a href="#">3</a></li>
+        <li class="paginacao-numero"><a href="#">4</a></li>
+        <li class="paginacao-numero"><a href="#">5</a></li>
+        <li class="paginacao-numero"><a href="#">6</a></li>
+        <li class="paginacao-numero"><a href="#">7</a></li>
+       
+        <li class="paginacao-escondido">...</li>
+        <li class="paginacao-numero"><a href="#">34</a></li>
+        <li class="paginacao-proximo"><a href="#">></a></li>
+        
+      </ul>
+            
+</body>
+</html>

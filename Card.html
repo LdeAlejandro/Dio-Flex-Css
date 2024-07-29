@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        *{
+            font-family: sans-serif;
+        }
+
+        body{
+            background-color: rgb(231,231,231);
+        }
+        
+        a{
+            text-decoration: none;
+            color: inherit;
+
+        }
+        img{
+            max-height: 100%;
+            max-width: 100%;
+        }
+        .card{
+            height: 538.391px;
+            width: 284px;
+            border-radius: 6px; 
+            background-color: rgb(255,255,255);
+            box-shadow: 0 0  1px 2px rgb(0 0 0 /12%);
+            overflow: hidden;
+            
+        }
+
+        .card:hover{
+         box-shadow: 0 25px 20px 0 rgba(0, 0, 0, .16), 0 -1px 2px 0 rgba(0, 0, 0, .1);
+        }
+
+        .card-imagem{
+            border-bottom: 1px solid rgb(245, 245,245);
+        }
+        
+        .card-info{
+            padding: 16px;
+        }
+
+        .card-info > span{
+            display: block;
+            margin-top: 4px;
+        }
+
+        .card-bagde{
+            background-color: rgb(53, 131, 250);
+            border-radius: 3px;
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 600;
+            padding: 2px 4px;
+            width: fit-content;
+            margin-bottom: 4px;
+            
+        }
+
+        .card-precoanterior{
+            font-size: 12px;
+            font-weight: 300;
+            text-decoration: line-through;
+            color: rgb(102,102,102);
+            
+        }
+
+        .card-precoatual{
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 400;
+            color: rgba(0, 0, 0 / 80%);
+
+        }
+
+        .card-desconto{
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 400;
+            color: rgba(0, 166, 80);
+        }
+
+        .card-parcelamento, .card-frete{
+            font-size: 14px;
+            font-weight: 300;
+            color: rgba(0, 166, 80);
+        }
+
+        .card-titulo{
+            font-size: 14p;
+            font-weight: 300;
+            color: rgba(0, 0, 0);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <a href="#">
+        <img src="https://http2.mlstatic.com/D_Q_NP_653613-MLU76654319697_052024-W.webp" alt="LG K22 Dual Sim 32 GB Titan 2 GB Ram" class="card-imagem"/>
+        <div class="card-info">
+            <span class="card-bagde">Oferta do dia</span>
+                <span class="card-precoanterior"> R$ 729</span>
+                <span>
+                <span class="card-precoatual">R$ 699</span>
+                <span class="card-desconto">4% OFF</span>
+                </span>
+                <span class="card-parcelamento">12x R$ 58,25 sem juros</span>
+                <span class="card-frete">Frete grátis</span>
+                <span class="card-titulo">LG K22 Dual Sim 32 GB Titan 2 GB Ram</span>
+        </div>
+        </a>
+    </div>
+</body>
+</html>

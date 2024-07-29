@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex-container{
+            max-width: 500px;
+            border: 1px solid black;
+            display: flex;
+        }
+            .items{
+                background-color: coral;
+                color: white;
+                text-align: center;
+                margin: 5px;
+            }
+
+            .bauto{
+                flex-basis:auto;
+            }
+
+            .basis-zero{
+                flex-basis:0;
+            }
+
+            .basis-width{
+                flex-basis: 100px;
+            }
+
+            .flex-grow0{
+                flex-grow: 0;
+            }
+
+            .flex-grow1{
+                flex-grow: 1;
+            }
+
+            .flex-grow2{
+                flex-grow: 2;
+            }
+        
+            .flex-grow3{
+                flex-grow: 3;
+            }
+    </style>
+</head>
+<body>
+    <p>Basis auto</p>
+    <div class="flex-container">
+        <div class="items bauto flex-grow1">A</div>
+        <div class="items bauto flex-grow1">BBB</div>
+        <div class="items bauto flex-grow1">C</div>
+        <div class="items bauto flex-grow2">DEF</div>
+    </div>
+
+    <p>Basis 0</p>
+
+    <div class="flex-container">
+        <div class="items basis-zero flex-grow1">A</div>
+        <div class="items basis-zero flex-grow1">BBB</div>
+        <div class="items basis-zero flex-grow1">C</div>
+        <div class="items basis-zero flex-grow1">DEF</div>
+    </div>
+    
+    <P>Basis + width</P>
+
+    <div class="flex-container">
+        <div class="items basis-width flex-grow2">A</div>
+        <div class="items basis-width flex-grow2">BBB</div>
+        <div class="items basis-width flex-grow2">C</div>
+        <div class="items basis-width flex-grow2">DEF</div>
+    </div>
+
+    <P>test</P>
+    <div class="flex-container">
+        <div class="items bauto flex-grow1">basis auto</div>
+        <div class="items basis-zero flex-grow1">basis-zero</div>
+        <div class="items basis-width flex-grow1">basis-width</div>
+        <div class="items basis-width flex-grow1">DEF</div>
+    </div>
+</body>
+</html>

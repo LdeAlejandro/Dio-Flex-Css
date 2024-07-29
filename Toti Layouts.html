@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--reset all css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        .cabecalho{
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .titulo-principal{
+            display: block;
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+
+        .titulo-secundario{
+            font-size: 14px;
+        }
+
+        .paises{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            height: 325px;
+            width: 546px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .paises-item{
+           
+        }
+
+        .paises-imagem-central{
+            height: 183px;
+            width: 200px;
+        }
+
+        .paises-idioma, .paises-artigos{
+            display: block;
+            text-align: center;
+        }
+
+        .paises-item{
+            position: absolute;
+        }
+
+        .paises nav{
+            height: 0;
+            width: 0;
+        }
+
+        .paises-1{
+            top: 0;
+            right: 60%;
+        }
+
+        .paises-2{
+            top: 0;
+            left: 60%;
+        }
+
+        .paises-3{
+            top: 20%;
+            right: 70%;
+        }
+
+        .paises-4{
+            top: 20%;
+            left: 70%;
+        }
+
+        .paises-5{
+            top: 40%;
+            right: 72%;
+        }
+
+        .paises-6{
+            top: 40%;
+            left: 72%;
+        }
+
+        .paises-7{
+            top: 60%;
+            right: 70%;
+        }
+
+        .paises-8{
+            top: 60%;
+            left: 70%;
+        }
+
+        .paises-9{
+            top: 80%;
+            right: 60%;
+        }
+
+        .paises-10{
+            top: 80%;
+            left: 60%;
+        }
+
+        .busca-container{
+            width: fit-content;
+            margin: 10px auto;
+            border: 1px solid #999999;
+        }
+
+        .busca-texto, .busca-idioma{
+            border: none;
+
+        }
+
+        .busca-menu{
+            width: fit-content;
+            margin: 10px auto;
+        }
+
+        .rodape {
+            border-top: 1px solid #c8ccd1;
+            border-bottom: 1px solid #c8ccd1;
+            padding: 40px 50px;
+            display: flex;
+            
+        }
+
+        .rodape-info{
+            max-width: 300px;
+        }
+        
+
+        .rodape-suporte, .rodape-apps{
+            display: flex;
+            padding: 10px;
+           
+        }
+
+        .rodape-apps{
+            margin-top: 30px;
+            background-color: #f8f9fa;
+            
+        }
+
+        .rodape-suporte-imagem, 
+        .rodape-apps-imagem{
+            margin-right: 10px;
+      
+        }
+
+        .rodape-suporte-imagem,
+        .rodape-apps-imagem,
+        .rodape-wikisites-imagem{
+
+            height: 37px;
+            width: 37px;
+        }
+
+        .rodape-apps-link{
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .rodape-appstore-imagem{
+            height: 28px;
+            margin-top: 10px;
+        }
+
+        .rodape-wikisites{
+            display:flex;
+            flex-wrap: wrap;
+            margin-left: 60px;
+        }
+
+        .rodape-wikisites-item > a{
+            display:flex;
+        }
+
+        .rodape-wikisites-info{
+            display:flex;
+            flex-direction: column;
+            margin-left: 8px;
+            width: 180px;
+        }
+        .licenca{
+            width: fit-content;
+            margin: 20px auto;
+        }        
+    </style>
+
+<svg role="none" aria-hidden="true" class="artdeco-button__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" data-supported-dps="16x16" data-test-icon="check-small">
+    <use href="#" width="16" height="16"></use>
+    <path d="M12.57 2H15L6 15l-5-5 1.41-1.41 3.31 3.3z"></path>
+  </svg>
+
+</head>
+<body>
+
+   <header class="cabecalho">
+    <h1 class="titulo">
+        <span class="titulo-principal">WikipediA</span>
+        <span class="titulo-secundario">The Free Encyclopedia</span>
+    </h1>
+   </header>
+
+   <section class="paises">
+    <img class="paises-imagem-central" src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png" alt="wikepidea logo"/>
+    <nav>
+        <ul class="paises-menu">
+            <li class="paises-item paises-1">
+                <a href="#">
+                    <span class="paises-idioma">Japanese</span>
+                    <span class="paises-artigos">3000+ articles</span>
+                </a>
+            </li>
+            <li class="paises-item paises-2">
+                <a href="#">
+                    <span class="paises-idioma">English</span>
+                    <span class="paises-artigos">5000+ articles</span>
+                </a>
+            </li>
+            <li class="paises-item paises-3">
+                <a href="#">
+                    <span class="paises-idioma">Spanish</span>
+                    <span class="paises-artigos">4000+ articles</span>
+                </a>
+            </li>
+            <li class="paises-item paises-4">
+                <a href="#">
+                    <span class="paises-idioma">French</span>
+                    <span class="paises-artigos">3500+ articles</span>
+                </a>
+            </li>
+            <li class="paises-item paises-5">
+                <a href="#">
+                    <span class="paises-idioma">German</span>
+                    <span class="paises-artigos">3200+ articles</span>
+                </a>
+            </li>
+            <li class="paises-item paises-6">
+                <a href="#">
+                    <span class="paises-idioma">Chinese</span>
+                    <span class="paises-artigos">4500+ articles</span>
+                </a>
+            </li>
+            <li class="paises-item paises-7">
+                <a href="#">
+                    <span class="paises-idioma">Italian</span>
+                    <span class="paises-artigos">2900+ articles</span>
+                </a>
+            </li>
+            <li class="paises-item paises-8">
+                <a href="#">
+                    <span class="paises-idioma">Portuguese</span>
+                    <span class="paises-artigos">3300+ articles</span>
+                </a>
+            </li>
+            <li class="paises-item paises-9">
+                <a href="#">
+                    <span class="paises-idioma">Russian</span>
+                    <span class="paises-artigos">3700+ articles</span>
+                </a>
+            </li>
+            <li class="paises-item paises-10">
+                <a href="#">
+                    <span class="paises-idioma">Korean</span>
+                    <span class="paises-artigos">2800+ articles</span>
+                </a>
+            </li>
+            
+
+        </ul>
+    </nav>
+
+</section>
+
+    <section>
+        <form action="#">
+            <div class="busca-container">
+                <input type="text" class="busca-texto"/>
+                <select name="idioma" id="idioma" class="busca-idioma">
+                    <option value="pt" selected="PT">PT</option>
+                    <option value="pt" lang="ES">ES</option>
+                    <option value="en" lang="EN">EN</option>
+                    <option value="fr" lang="FR">FR</option>
+                    <option value="de" lang="DE">DE</option>
+                    <option value="it" lang="IT">IT</option>
+                    <option value="jp" lang="JA">JA</option>
+                    <option value="cn" lang="ZH">ZH</option>
+                    <option value="ru" lang="RU">RU</option>
+                </select>
+                <button type="submit" class="busca-botao">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </form>
+        <div class="busca-menu">
+            <button class="busca-menu-idiomas">
+                Read Wikipedia in your language
+            </button>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape-info">
+            <div class="rodape-suporte">
+                <img class="rodape-suporte-imagem"src="https://imgs.search.brave.com/cb0FLaiQmUJQ9R3lFee6cdRGwQQBVi_63I8iMaYzvL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE5/Mzg4MDU0OS9waG90/by9hbmthcmEtdHVy/a2V5LWxvZ28tb2Yt/d2lraXBlZGlhLWlz/LXNlZW4taW4tYW5r/YXJhLXR1cmtleS1v/bi1ub3ZlbWJlci0z/MC0yMDE5LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz14R1hX/UHg3aXI4WUF6emlO/bmNfX1h6bWotWXNK/eHctRHRNNXZlYmVW/VEFVPQ" alt=""/>
+                <div class="rodape-suporte-text">
+                    <p>
+                        A Wikipédia é alojada pela Wikimedia Foundation, uma organização sem fins lucrativos que também aloja vários outros projetos.
+                    </p>
+                    <a href="#">Pode apoiar o nosso trabalho com um donativo.</a>
+                </div>
+            </div>
+
+            <div class="rodape-apps">
+                <img class="rodape-apps-imagem"src="https://imgs.search.brave.com/cb0FLaiQmUJQ9R3lFee6cdRGwQQBVi_63I8iMaYzvL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE5/Mzg4MDU0OS9waG90/by9hbmthcmEtdHVy/a2V5LWxvZ28tb2Yt/d2lraXBlZGlhLWlz/LXNlZW4taW4tYW5r/YXJhLXR1cmtleS1v/bi1ub3ZlbWJlci0z/MC0yMDE5LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz14R1hX/UHg3aXI4WUF6emlO/bmNfX1h6bWotWXNK/eHctRHRNNXZlYmVW/VEFVPQ" alt=""/>
+                <div class="rodape-info">
+                    <a href="#" class="rodape-apps-link">Descarregar a Wikipédia para Android e iOS</a>
+                    <p>
+                        Guarde os seus artigos preferidos para ler offline, sincronize as suas listas de leitura entre dispositivos e personalize a sua experiência de leitura com a aplicação oficial da Wikipédia.
+                    </p>
+                    <div class="rodape-appstore-lojas">
+                        <img src="https://www.nicepng.com/png/full/435-4350523_get-it-on-google-play-google-play.png" alt="" class="rodape-appstore-imagem">
+                        <img src="https://pluspng.com/img-png/download-on-app-store-png-android-iphone-394.png" alt="" class="rodape-appstore-imagem">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="rodape-wikisites">
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://imgs.search.brave.com/cb0FLaiQmUJQ9R3lFee6cdRGwQQBVi_63I8iMaYzvL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE5/Mzg4MDU0OS9waG90/by9hbmthcmEtdHVy/a2V5LWxvZ28tb2Yt/d2lraXBlZGlhLWlz/LXNlZW4taW4tYW5r/YXJhLXR1cmtleS1v/bi1ub3ZlbWJlci0z/MC0yMDE5LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz14R1hX/UHg3aXI4WUF6emlO/bmNfX1h6bWotWXNK/eHctRHRNNXZlYmVW/VEFVPQ" alt="" class="rodape-wikisites-imagem"/>
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">
+                            Commons
+                        </span>
+                        <span class="rodape-wikisites-descricao">
+                            Freely usable potos & more
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://imgs.search.brave.com/cb0FLaiQmUJQ9R3lFee6cdRGwQQBVi_63I8iMaYzvL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE5/Mzg4MDU0OS9waG90/by9hbmthcmEtdHVy/a2V5LWxvZ28tb2Yt/d2lraXBlZGlhLWlz/LXNlZW4taW4tYW5r/YXJhLXR1cmtleS1v/bi1ub3ZlbWJlci0z/MC0yMDE5LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz14R1hX/UHg3aXI4WUF6emlO/bmNfX1h6bWotWXNK/eHctRHRNNXZlYmVW/VEFVPQ" alt="" class="rodape-wikisites-imagem"/>
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">
+                            Commons
+                        </span>
+                        <span class="rodape-wikisites-descricao">
+                            Freely usable potos & more
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://imgs.search.brave.com/cb0FLaiQmUJQ9R3lFee6cdRGwQQBVi_63I8iMaYzvL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE5/Mzg4MDU0OS9waG90/by9hbmthcmEtdHVy/a2V5LWxvZ28tb2Yt/d2lraXBlZGlhLWlz/LXNlZW4taW4tYW5r/YXJhLXR1cmtleS1v/bi1ub3ZlbWJlci0z/MC0yMDE5LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz14R1hX/UHg3aXI4WUF6emlO/bmNfX1h6bWotWXNK/eHctRHRNNXZlYmVW/VEFVPQ" alt="" class="rodape-wikisites-imagem"/>
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">
+                            Commons
+                        </span>
+                        <span class="rodape-wikisites-descricao">
+                            Freely usable potos & more
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://imgs.search.brave.com/cb0FLaiQmUJQ9R3lFee6cdRGwQQBVi_63I8iMaYzvL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE5/Mzg4MDU0OS9waG90/by9hbmthcmEtdHVy/a2V5LWxvZ28tb2Yt/d2lraXBlZGlhLWlz/LXNlZW4taW4tYW5r/YXJhLXR1cmtleS1v/bi1ub3ZlbWJlci0z/MC0yMDE5LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz14R1hX/UHg3aXI4WUF6emlO/bmNfX1h6bWotWXNK/eHctRHRNNXZlYmVW/VEFVPQ" alt="" class="rodape-wikisites-imagem"/>
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">
+                            Commons
+                        </span>
+                        <span class="rodape-wikisites-descricao">
+                            Freely usable potos & more
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://imgs.search.brave.com/cb0FLaiQmUJQ9R3lFee6cdRGwQQBVi_63I8iMaYzvL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE5/Mzg4MDU0OS9waG90/by9hbmthcmEtdHVy/a2V5LWxvZ28tb2Yt/d2lraXBlZGlhLWlz/LXNlZW4taW4tYW5r/YXJhLXR1cmtleS1v/bi1ub3ZlbWJlci0z/MC0yMDE5LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz14R1hX/UHg3aXI4WUF6emlO/bmNfX1h6bWotWXNK/eHctRHRNNXZlYmVW/VEFVPQ" alt="" class="rodape-wikisites-imagem"/>
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">
+                            Commons
+                        </span>
+                        <span class="rodape-wikisites-descricao">
+                            Freely usable potos & more
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://imgs.search.brave.com/cb0FLaiQmUJQ9R3lFee6cdRGwQQBVi_63I8iMaYzvL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE5/Mzg4MDU0OS9waG90/by9hbmthcmEtdHVy/a2V5LWxvZ28tb2Yt/d2lraXBlZGlhLWlz/LXNlZW4taW4tYW5r/YXJhLXR1cmtleS1v/bi1ub3ZlbWJlci0z/MC0yMDE5LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz14R1hX/UHg3aXI4WUF6emlO/bmNfX1h6bWotWXNK/eHctRHRNNXZlYmVW/VEFVPQ" alt="" class="rodape-wikisites-imagem"/>
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">
+                            Commons
+                        </span>
+                        <span class="rodape-wikisites-descricao">
+                            Freely usable potos & more
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://imgs.search.brave.com/cb0FLaiQmUJQ9R3lFee6cdRGwQQBVi_63I8iMaYzvL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE5/Mzg4MDU0OS9waG90/by9hbmthcmEtdHVy/a2V5LWxvZ28tb2Yt/d2lraXBlZGlhLWlz/LXNlZW4taW4tYW5r/YXJhLXR1cmtleS1v/bi1ub3ZlbWJlci0z/MC0yMDE5LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz14R1hX/UHg3aXI4WUF6emlO/bmNfX1h6bWotWXNK/eHctRHRNNXZlYmVW/VEFVPQ" alt="" class="rodape-wikisites-imagem"/>
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">
+                            Commons
+                        </span>
+                        <span class="rodape-wikisites-descricao">
+                            Freely usable potos & more
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://imgs.search.brave.com/cb0FLaiQmUJQ9R3lFee6cdRGwQQBVi_63I8iMaYzvL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE5/Mzg4MDU0OS9waG90/by9hbmthcmEtdHVy/a2V5LWxvZ28tb2Yt/d2lraXBlZGlhLWlz/LXNlZW4taW4tYW5r/YXJhLXR1cmtleS1v/bi1ub3ZlbWJlci0z/MC0yMDE5LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz14R1hX/UHg3aXI4WUF6emlO/bmNfX1h6bWotWXNK/eHctRHRNNXZlYmVW/VEFVPQ" alt="" class="rodape-wikisites-imagem"/>
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">
+                            Commons
+                        </span>
+                        <span class="rodape-wikisites-descricao">
+                            Freely usable potos & more
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://imgs.search.brave.com/cb0FLaiQmUJQ9R3lFee6cdRGwQQBVi_63I8iMaYzvL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE5/Mzg4MDU0OS9waG90/by9hbmthcmEtdHVy/a2V5LWxvZ28tb2Yt/d2lraXBlZGlhLWlz/LXNlZW4taW4tYW5r/YXJhLXR1cmtleS1v/bi1ub3ZlbWJlci0z/MC0yMDE5LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz14R1hX/UHg3aXI4WUF6emlO/bmNfX1h6bWotWXNK/eHctRHRNNXZlYmVW/VEFVPQ" alt="" class="rodape-wikisites-imagem"/>
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">
+                            Commons
+                        </span>
+                        <span class="rodape-wikisites-descricao">
+                            Freely usable potos & more
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://imgs.search.brave.com/cb0FLaiQmUJQ9R3lFee6cdRGwQQBVi_63I8iMaYzvL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE5/Mzg4MDU0OS9waG90/by9hbmthcmEtdHVy/a2V5LWxvZ28tb2Yt/d2lraXBlZGlhLWlz/LXNlZW4taW4tYW5r/YXJhLXR1cmtleS1v/bi1ub3ZlbWJlci0z/MC0yMDE5LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz14R1hX/UHg3aXI4WUF6emlO/bmNfX1h6bWotWXNK/eHctRHRNNXZlYmVW/VEFVPQ" alt="" class="rodape-wikisites-imagem"/>
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">
+                            Commons
+                        </span>
+                        <span class="rodape-wikisites-descricao">
+                            Freely usable potos & more
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li class="rodape-wikisites-item">
+                <a href="#">
+                    <img src="https://imgs.search.brave.com/cb0FLaiQmUJQ9R3lFee6cdRGwQQBVi_63I8iMaYzvL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE5/Mzg4MDU0OS9waG90/by9hbmthcmEtdHVy/a2V5LWxvZ28tb2Yt/d2lraXBlZGlhLWlz/LXNlZW4taW4tYW5r/YXJhLXR1cmtleS1v/bi1ub3ZlbWJlci0z/MC0yMDE5LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz14R1hX/UHg3aXI4WUF6emlO/bmNfX1h6bWotWXNK/eHctRHRNNXZlYmVW/VEFVPQ" alt="" class="rodape-wikisites-imagem"/>
+                    <div class="rodape-wikisites-info">
+                        <span class="rodape-wikisites-nome">
+                            Commons
+                        </span>
+                        <span class="rodape-wikisites-descricao">
+                            Freely usable potos & more
+                        </span>
+                    </div>
+                </a>
+            </li>
+            
+        </ul>
+
+        </div>
+
+    </footer>
+    
+    <p class="licenca">
+        <small>
+            Esta página é disponibilizada nos termos da &bull;
+            <a href="#">
+                licença Creative Commons Atribuição-Compartilha Igual
+            </a>
+        </small> 
+        &bull;
+        <small>
+        <a href="#">
+            Condições de utilização
+        </a> &bull;<a href="#">Política de privacidade</a>
+        </small>
+    </p>
+
+</body>
+</html>
